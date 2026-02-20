@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photo gallery of UISS International Secondary School - View our facilities, events, and student activities">
+    <title>Gallery - UISS International Secondary School</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="https://wa.me/2348012345678" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="white">
+            <path d="M16 0C7.164 0 0 7.164 0 16c0 2.828.736 5.484 2.016 7.792L0 32l8.384-2.016A15.934 15.934 0 0016 32c8.836 0 16-7.164 16-16S24.836 0 16 0zm0 29.333c-2.548 0-4.96-.708-7.012-1.936l-.504-.296-5.22 1.256 1.256-5.22-.296-.504A13.268 13.268 0 012.667 16c0-7.364 5.97-13.333 13.333-13.333S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.292-9.708c-.4-.2-2.368-1.168-2.736-1.3-.368-.132-.636-.2-.904.2-.268.4-1.036 1.3-1.268 1.568-.232.268-.468.3-.868.1-.4-.2-1.688-.62-3.216-1.98-1.188-1.056-1.992-2.36-2.224-2.76-.232-.4-.024-.616.176-.816.18-.18.4-.468.6-.704.2-.232.268-.4.4-.668.132-.268.068-.5-.032-.7-.1-.2-.904-2.176-1.24-2.98-.328-.78-.66-.676-.904-.688-.232-.012-.5-.016-.768-.016s-.7.1-1.068.5c-.368.4-1.404 1.372-1.404 3.348s1.436 3.884 1.636 4.152c.2.268 2.828 4.316 6.852 6.052.956.412 1.704.66 2.288.844.96.304 1.836.26 2.528.156.772-.116 2.368-.968 2.7-1.904.332-.936.332-1.74.232-1.904-.1-.164-.368-.264-.768-.464z"/>
+        </svg>
+    </a>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="index.html" class="logo">
+                        <span class="logo-text">UISS</span>
+                        <span class="logo-subtitle">Excellence & Creativity</span>
+                    </a>
+                    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="gallery.html" class="active">Gallery</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Photo Gallery</h1>
+            <p>Capturing Moments of Excellence and Creativity</p>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All Photos</button>
+                <button class="filter-btn" data-filter="facilities">Facilities</button>
+                <button class="filter-btn" data-filter="classes">Classes</button>
+                <button class="filter-btn" data-filter="sports">Sports</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+                <button class="filter-btn" data-filter="graduation">Graduation</button>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Facilities -->
+                <div class="gallery-item" data-category="facilities">
+                    <img src="images/gallery/science-lab.jpg" alt="Science Laboratory" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Science Laboratory</h3>
+                        <p>Fully equipped for practical experiments</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="facilities">
+                    <img src="images/gallery/ict-center.jpg" alt="ICT Center" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>ICT Center</h3>
+                        <p>Modern computer lab with internet</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="facilities">
+                    <img src="images/gallery/library.jpg" alt="School Library" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>School Library</h3>
+                        <p>Over 5,000 books and resources</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="facilities">
+                    <img src="images/gallery/classroom.jpg" alt="Modern Classroom" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Modern Classroom</h3>
+                        <p>Spacious and well-ventilated</p>
+                    </div>
+                </div>
+
+                <!-- Classes -->
+                <div class="gallery-item" data-category="classes">
+                    <img src="images/gallery/students-learning.jpg" alt="Students in Class" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Active Learning</h3>
+                        <p>Engaged students in mathematics class</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="classes">
+                    <img src="images/gallery/chemistry-practical.jpg" alt="Chemistry Practical" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Chemistry Practical</h3>
+                        <p>Hands-on laboratory session</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="classes">
+                    <img src="images/gallery/computer-class.jpg" alt="Computer Class" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Computer Studies</h3>
+                        <p>Learning digital skills</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="classes">
+                    <img src="images/gallery/art-class.jpg" alt="Art Class" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Creative Arts</h3>
+                        <p>Developing artistic talents</p>
+                    </div>
+                </div>
+
+                <!-- Sports -->
+                <div class="gallery-item" data-category="sports">
+                    <img src="images/gallery/football-match.jpg" alt="Football Match" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Inter-House Football</h3>
+                        <p>Annual sports competition</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="sports">
+                    <img src="images/gallery/athletics.jpg" alt="Athletics" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Athletics Day</h3>
+                        <p>Track and field events</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="sports">
+                    <img src="images/gallery/basketball.jpg" alt="Basketball" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Basketball Tournament</h3>
+                        <p>Inter-school competition</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="sports">
+                    <img src="images/gallery/volleyball.jpg" alt="Volleyball" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Volleyball Match</h3>
+                        <p>Students in action</p>
+                    </div>
+                </div>
+
+                <!-- Events -->
+                <div class="gallery-item" data-category="events">
+                    <img src="images/gallery/assembly.jpg" alt="Morning Assembly" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Morning Assembly</h3>
+                        <p>Daily school assembly</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="events">
+                    <img src="images/gallery/cultural-day.jpg" alt="Cultural Day" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Cultural Day Celebration</h3>
+                        <p>Showcasing Nigerian heritage</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="events">
+                    <img src="images/gallery/debate.jpg" alt="Debate Competition" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Debate Competition</h3>
+                        <p>Developing public speaking skills</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="events">
+                    <img src="images/gallery/science-fair.jpg" alt="Science Fair" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Science Fair</h3>
+                        <p>Student innovations on display</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="events">
+                    <img src="images/gallery/prize-giving.jpg" alt="Prize Giving Day" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Prize Giving Day</h3>
+                        <p>Celebrating academic excellence</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="events">
+                    <img src="images/gallery/excursion.jpg" alt="Educational Excursion" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Educational Excursion</h3>
+                        <p>Learning beyond the classroom</p>
+                    </div>
+                </div>
+
+                <!-- Graduation -->
+                <div class="gallery-item" data-category="graduation">
+                    <img src="images/gallery/graduation-1.jpg" alt="Graduation Ceremony" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Graduation 2025</h3>
+                        <p>Celebrating our graduates</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="graduation">
+                    <img src="images/gallery/graduation-2.jpg" alt="Graduates" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Class of 2025</h3>
+                        <p>Ready for the future</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="graduation">
+                    <img src="images/gallery/valedictory.jpg" alt="Valedictory Service" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Valedictory Service</h3>
+                        <p>Farewell to SS3 students</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="graduation">
+                    <img src="images/gallery/best-students.jpg" alt="Best Students" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Outstanding Students</h3>
+                        <p>Academic excellence awards</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>UISS International Secondary School</h3>
+                    <p>Excellence and Creativity</p>
+                    <p>Nurturing future leaders through quality education since 2005</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="staff.html">Staff</a></li>
+                        <li><a href="downloads.html">Downloads</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p>📍 University of Uyo Road, Uyo<br>Akwa Ibom State, Nigeria</p>
+                    <p>📞 +234 801 234 5678<br>📞 +234 802 345 6789</p>
+                    <p>✉️ info@uniyuiss.edu.ng</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                    </div>
+                    <a href="privacy.html" class="footer-link">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 UISS International Secondary School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Gallery Filter
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
